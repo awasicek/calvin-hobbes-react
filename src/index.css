@@ -1,0 +1,189 @@
+body, html {
+  height: 100%;
+}
+
+.app-background {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: black;
+  background-image: url('background/background_calvin_and_hobbes.jpg');
+  padding: 10px 0px 10px 0px;
+
+  /* soft-parallax */
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* container */
+.collection-manager {
+  background-color: rgba(121, 121, 121, 0.28);
+  max-width: 1000px;
+  min-width: 700px;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.dashboard {
+  font-size: 30px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  /* stroke effect */
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  color: white;
+  padding: 10px 20px 10px 20px;
+}
+
+.expand-entry-big {
+  font-size: 30px;
+  color: rgb(203, 203, 203);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.expand-entry-big:hover{
+  color: white;
+}
+
+.owned-category {
+  font-size: 22px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  /* stroke effect */
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  color: white;  padding: 0px 20px 10px 20px;
+  text-align: center;
+}
+
+.unowned-category {
+  font-size: 22px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  /* stroke effect */
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  color: white;
+  padding: 0px 20px 10px 20px;
+  text-align: center;
+}
+
+.messengerComponent {
+  display: none;
+}
+
+.category-bar {
+  padding: 0px 0px 5px 10px;
+  background-color: rgba(254, 183, 24, 0.82);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.category-contents {
+  min-height: 50px; /* so things can always be dropped back in even if empty */
+}
+
+/* container */
+.book-entry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(40, 37, 51);
+  align-items: center;
+  padding: 10px 20px 10px 20px; /* top, right, bottom, left */
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid rgba(226, 136, 62, 0.78);
+  border-style: ridge;
+  min-width: 400px;
+  cursor: grab;
+}
+
+.entry-title {
+  color: rgb(203, 203, 203);
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-align: left;
+  font-weight: bold;
+}
+
+.colorOff.entry-title {
+  color: rgb(203, 203, 203);
+}
+
+.colorOn.entry-title {
+  color: white;
+}
+
+.entry-title:hover {
+  color: white;
+}
+
+.entry-date {
+  color: rgb(203, 203, 203);
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin-left: 20px;
+  text-align: right;
+}
+
+.expand-entry {
+  color: rgb(203, 203, 203);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.expand-entry:hover{
+  color: white;
+}
+
+/* drop-down view */
+.book-expanded {
+  margin: auto;
+  text-align: left;
+  background-color: rgb(40, 37, 51);
+  padding: 10px 20px 10px 20px; /* top, right, bottom, left */
+  font-size: 12px;
+  min-width: 398px;
+  color: rgb(203, 203, 203);
+  font-family: "Arial Black", Gadget, sans-serif;
+  width: 93.2%;
+}
+
+.book-info span {
+  text-decoration: underline;
+}
+
+.book-expanded p {
+  max-width: 400px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.book-expanded-layout {
+  display: flex;
+}
+
+/* container for image */
+.book-image {
+  width: 150px;
+  height: 200px;
+}
+
+.book-image img {
+  width: 100%;
+  height: auto;
+}
